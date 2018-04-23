@@ -1,0 +1,2 @@
+1. Rule untuk pembaca diprioritaskan adalah writer akan mulai mencoba melewati db.tutup() atau membaca saat mengetahui tidak ada reader yang menunggu lagi (banyakReader = 0).
+2. Rule untuk penulis diprioritaskan adalah menggunakan variabel adaWriter yang mengembalikan nilai 0 jika tidak ada writer yang menunggu. Ada pada method mulaiBaca(), berguna untuk menunda reader untuk membaca selama masih ada writer yang sedang antri.
